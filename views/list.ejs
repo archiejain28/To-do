@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo</title>
+    <link rel="stylesheet" href= "style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+<body>
+    <div class = "box">
+    <h1><%= toDay %></h1>
+    </div>
+    <div class = "box">
+     
+    
+    
+
+    <% newItems.forEach(function(newItem){ %>
+    <form action = "/delete" method = "POST">
+      <div class="item">
+       <input type="checkbox" name="check" value = "<%= newItem._id %>" onchange="this.form.submit()">
+       <p><%= newItem.name %></p>
+       </div>
+    <%})%>
+  </form>
+      <form action = "/" method = "POST">
+        <input type= "text" name="new" placeholder = "Add more">
+        <button type="submit" >+</button> 
+        <button type="submit" name="reset" value="reset" id="rest">R</button>
+      </form>
+    </div>
+
+</body>
+</html>

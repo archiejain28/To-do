@@ -1,0 +1,82 @@
+html{
+    background-color: #E4E9FD;
+    background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%);
+    min-height: 500px;
+    font-family: 'helvetica neue';
+}
+
+h1{
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    text-shadow:#A683E3;
+    background:#A683E3 ;
+    color: white;
+}
+
+
+.box {
+    max-width: 450px;
+    margin: 50px auto;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+  }
+
+  p {
+    margin: 0;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 200;
+    color: #00204a;
+  }
+
+input[type="checkbox"] {
+    margin: 20px;
+  }
+
+input[type="text"] {
+    text-align: center;
+    height: 60px;
+    font-size: 20px;
+    width: 313px;
+    border: none;
+    background: transparent;
+  }
+
+  input[type="text"]:focus {
+    outline:transparent;
+    box-shadow: inset 0 -3px 0 0 #A683E3;
+  }
+
+
+  button{
+     background-color: #A683E3;
+     border-color: transparent;
+     border-radius: 50%;
+     min-height: 50px;
+     width: 50px;
+     color: #fff;
+     border-width: 0;
+     font-size: 30px;
+  }
+
+  form.item{
+    text-align: center;
+    padding-bottom: 5px;
+  }
+
+  .item {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #F1F1F1;
+  }
+
+  input:checked+p {
+    text-decoration: line-through;
+    text-decoration-color: #A683E3;
+  }
+
+  #rest{
+      font-size: medium;
+  }
